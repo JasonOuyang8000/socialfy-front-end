@@ -1,0 +1,81 @@
+[data-theme="light"]{
+  --text-color: black;
+  --background-color-card: #fafafa;
+  --background-color: #9ee4fa;
+  --background-color-light: #e3f8df;
+  --background-image: linear-gradient(315deg, #aee1f9 0%, #f6ebe6 74%);
+  --card-color-icon: #aee1f9!important;
+  --comment-background:  #d8fafa;
+  --background-color-selected: #ffba9f;
+  --background-color-send: rgb(198, 198, 221);
+  --background-color-chat: rgb(208, 208, 233);
+  --background-color-chat-text: rgb(163, 153, 209);
+}
+[data-theme="dark"]{
+  --text-color: #ffffff;
+  --background-color: #2e2e2d;
+  --background-color-card: #1b1b1b;
+  --card-color-icon: rgb(255, 255, 255) !important;
+  --comment-background:  #141414;
+  --background-color-selected: #f7fcb7;
+  --background-color-send: rgb(65, 55, 4);
+  --background-color-chat: rgb(158, 136, 12);
+  --background-color-chat-text: rgb(252, 231, 111);
+  --background-color-light: #4f5050;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
+
+body {
+  font-family: 'B612', sans-serif;
+  font-size: 16px;
+
+}
+
+
+.App {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  min-height: 100vh;
+  background-image: var(--background-image);
+ 
+}   
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1450px !important;
+ }
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  /* Needed to make it work */
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.loader-color {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.c-width-md {
+  max-width: 1000px!important;
+}
+
+.sync-btn-home {
+  position: fixed;
+  bottom: 25px;
+  z-index: 998;
+  right: 40px;
+}
+
+.sync-color {
+  color: rgb(133, 194, 83);
+}

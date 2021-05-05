@@ -1,0 +1,15 @@
+ await new Promise(resolve => {
+          setTimeout(resolve, 10000)
+ });
+
+   <Fragment>
+                     <div className="col-9">
+                   
+                        <p className="text-right">{description}</p>
+                     
+                    </div>
+                    <div className="col-3">
+                    <ProfileCircle image={user.image} userId={currentUser.id} styleName="profile-circle-x-small  mr-auto" />
+                    <p className="time-text text-left">{convertTime(updatedAt)}</p>
+                    </div>
+                </Fragment>

@@ -1,0 +1,23 @@
+.friends-card {
+    min-height: 200px;
+    background: var(--background-color-card);
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.friend-btn {
+    background: var(--background-color);
+    color: var(--text-color);
+    border: 0;  
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.friends-total-text {
+    font-size: 20px;
+}
+
+.friends-card-selected {
+    color: var(--background-color-selected);
+}

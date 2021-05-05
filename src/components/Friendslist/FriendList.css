@@ -1,0 +1,152 @@
+.friend-list {
+    border-radius: 30px;
+    padding: 10px;
+    padding-top: 40px;
+    background: var(--background-color-card);
+    min-height: 82vh;
+    position: sticky;
+    /* border: 2px solid var(--background-color-chat); */
+    color: var(--text-color);
+    top: 140px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    
+}
+
+#list-title {
+    text-align: center;
+    font-size: 24px;
+    border-radius: 10px;    
+   
+}
+
+.title-box {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: var( --background-color-chat);
+    width: 100%;
+    height: 45px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.friend-list-place-holder {
+    background: var(--background-color);
+    opacity: 0.4;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    margin-bottom: 20px;
+
+}
+.friend-list-place-holder h3 {
+    
+    text-align: center;
+}
+
+#list-item-fr-title {
+    font-size: 16px;
+}
+
+.list-item-friend {
+    margin-bottom: 20px;
+    background: var(--background-color-light);
+    padding: 5px;
+    
+    border-radius: 20px;
+}
+
+.friend-list-actual {
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+/* width */
+.chat-messages::-webkit-scrollbar,
+.requested-box::-webkit-scrollbar,
+.friend-list-actual::-webkit-scrollbar {
+    width: 0.3em;
+    height: 0.3em;
+  }
+  
+  /* Track */
+  .chat-messages::-webkit-scrollbar-track,
+  .requested-box::-webkit-scrollbar-track,
+  .friend-list-actual::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  .chat-messages::-webkit-scrollbar-thumb,
+  .requested-box::-webkit-scrollbar-thumb,
+  .friend-list-actual::-webkit-scrollbar-thumb {
+    background: var( --background-color);
+  }
+  
+  /* Handle on hover */
+  .chat-messages::-webkit-scrollbar-thumb:hover,
+  .requested-box::-webkit-scrollbar-thumb:hover,
+  .friend-list-actual::-webkit-scrollbar-thumb:hover {
+    background: rgb(236, 235, 235); 
+  }
+
+.list-request {
+    height: 380px;
+}
+
+.list-request h3 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.requested-box {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.request-placeholder {
+    background: var(--background-color-light);
+    height: 150px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    opacity: 0.5;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.fa-red-color {
+    color: rgb(255, 131, 131);
+}
+
+.fa-green-color {
+    color: rgb(216, 205, 255);
+}
+
+.fa-btn-effect {
+    cursor: pointer;
+}
+
+.text-small {
+    font-size: 10px!important;
+    margin-bottom: 10px;
+  
+}
+
+.sync-btn-friends {
+    position: relative;
+    top: -398px;
+    left: 70px;
+    z-index: 999;
+}

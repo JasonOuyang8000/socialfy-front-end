@@ -1,0 +1,56 @@
+.form-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+}
+
+.form-container {
+    background: white;
+    height: 750px;
+    width: 1400px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+    .form-container {
+        width: 90vw;
+        height: 90vh;
+    }
+}
+
+
+
+
+#sign-title {
+    color: rgb(92, 131, 107);
+}
+
+.sign-input-text {
+    background: rgb(185, 214, 185);
+    border: 1px solid rgba(128, 128, 128, 0.452);
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.btn-submit {
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 15px;
+    border: 1px solid rgb(143, 141, 141);
+    background: rgb(229, 248, 229);
+    margin: 0 auto;
+    display: block;
+}
+
+.switch-button {
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0;
+    background: rgb(232, 230, 255);  
+    border: 1px solid rgb(143, 141, 141);
+}

@@ -1,0 +1,42 @@
+
+.post-card {
+    min-height: 276px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background: var(--background-color-card);
+    bottom: -20px;
+}
+
+.post-card-name {
+    font-size: 22px;
+}
+
+.post-card .description-text {
+    font-size: 20px;
+    word-wrap: break-word;
+}
+
+
+.card-time {
+    font-size: 16px;
+    color: rgb(114, 112, 112);
+}
+
+.icon-card {
+    color: var(--card-color-icon);
+    cursor: pointer;
+}
+
+.like-text {
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.post-card img {
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+   
+    display: block;
+    margin: 0px auto 20px auto;
+}

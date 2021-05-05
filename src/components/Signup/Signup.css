@@ -1,0 +1,53 @@
+.select-css {
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.form-image {
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.profile-circle {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px; 
+    border: 4px solid rgb(166, 185, 163);
+}
+
+.btn-green-custom {
+    
+    color: rgb(243, 243, 243);
+    background: rgb(25, 77, 25);
+    border: 0;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+
+.modal-md {
+    width: 50%;
+}
+
+.ReactModal__Content--after-open {
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+    
+}
+
+.modal-inside {
+    padding: 40px;
+}
+
+.custom-textarea {
+    border-width: 2px;
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 20px;
+    border: 0;
+    background: rgb(226, 226, 255);
+}

@@ -1,0 +1,80 @@
+[data-theme="light"] {
+    --nav-text-color: rgb(55, 104, 93);
+    --nav-background-color: rgba(247, 244, 244, 0.541);
+    --brand-title: rgb(56, 121, 141);
+    --hover-bg: rgba(170, 169, 169, 0.281);
+    
+}
+  
+[data-theme="dark"] {
+    --nav-text-color: rgb(221, 215, 215);
+    --nav-background-color: rgba(17, 16, 16, 0.541);
+    --brand-title: rgb(56, 121, 141);
+    --hover-bg: rgba(170, 169, 169, 0.281);
+}
+
+
+.navbar span,
+.navbar a {
+    color: var(--nav-text-color);
+}
+
+.navbar span {
+    cursor: pointer;
+}
+
+.nav-link {
+    padding: 20px;
+    min-width: 80px;
+    text-align: center;
+    margin-right: 10px;
+}
+.navbar span:hover,
+.navbar a:hover {
+    background: var(--hover-bg);
+    border-radius: 30px;
+}
+
+.navbar .active {
+    background: var(--hover-bg);
+    border-radius: 30px;
+}
+
+.navbar {
+    background-color: var(--nav-background-color) !important;
+}
+
+#brand-title {
+    font-size: 30px;
+    margin: unset;
+    color: var(--brand-title);   
+}
+
+.no-active {
+    background: unset!important;
+}
+
+
+
+.pointer {
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 576px) {
+    .navbar-nav {
+        margin-top: 30px;
+        margin: 20px auto 0 auto;
+    }
+
+    .nav-link {
+        padding: 0;
+        min-width: 20px;
+        margin-right: 10px;
+    }
+
+    .navbar .active {
+        background: unset;
+        
+    }
+}

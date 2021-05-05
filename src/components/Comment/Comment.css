@@ -1,0 +1,18 @@
+.comment-alias {
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+.comment-section {
+    min-height: 100px;
+    word-wrap: break-word;
+    overflow: none;
+}
+
+.time-text {
+    color: rgb(114, 114, 114);
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
