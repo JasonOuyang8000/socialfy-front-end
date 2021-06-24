@@ -6,17 +6,18 @@ import Home from './pages/Home';
 import {ThemeContext} from './context/ThemeContext';
 import { Fragment, useEffect, useRef, useState } from 'react';
 import { UserContext } from './context/UserContext';
+import { ErrorContext } from './context/ErrorContext';
 import Form from './pages/Form';
 import axios from 'axios';
 import Loader from './components/Loader/Loader';
 import Profile from './pages/Profile';
 import PublicProfile from './pages/PublicProfile';
-
+import Error from './components/Error/Error';
 function App() {
   const [loaded, setLoaded] = useState(true);
   const [user, setUser] = useState(null);
   const [theme, setTheme] = useState('light');
-
+  const [error, setError] = useState(false);
  
   const verifyUser = async() => {
     if (localStorage.getItem('userToken')) {
@@ -61,8 +62,10 @@ function App() {
   return (
     <UserContext.Provider value={{user,setUser}}>
     <ThemeContext.Provider value={{theme,setTheme}}>
+    <ErrorContext.Provider value={{error,setError}}>
+    {error.isError && <Error message={error.message}/> }
     <div className={`App ${user !== null ? 'nav-space' : ''}`} data-theme={theme}>
-
+        
         {user !== null &&  <Navbar setUser={setUser} user={user}data-theme={theme} themeControl={{theme,setTheme}}/> 
         
         }
@@ -105,6 +108,7 @@ function App() {
         }
         </Switch>
     </div>
+    </ErrorContext.Provider>
     </ThemeContext.Provider>
     </UserContext.Provider>
   );

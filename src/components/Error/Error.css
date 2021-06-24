@@ -1,0 +1,9 @@
+.error-block {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    background: rgb(252, 219, 219);
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}

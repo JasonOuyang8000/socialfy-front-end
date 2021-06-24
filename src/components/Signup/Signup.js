@@ -1,13 +1,15 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Fragment, useContext, useEffect, useState } from 'react';
 import { faSync } from '@fortawesome/free-solid-svg-icons';
-
+import { ErrorContext } from '../../context/ErrorContext';
 
 import './Signup.css';
 import axios from 'axios';
 import { UserContext } from '../../context/UserContext';
 import LoaderTwo from '../Loader/LoaderTwo';
 import Modal from 'react-modal';
+
+
 
 const customStyles = {
     content : {
@@ -40,7 +42,7 @@ const Signup = () => {
     });
 
     const {user, setUser} = useContext(UserContext);
-    
+    const {error, setError} = useContext(ErrorContext);
     
 
     const handleTextChange = (e) => {
@@ -96,8 +98,9 @@ const Signup = () => {
 
         catch(error) {
             setLoaded(true);
-            if (error.response) console.log(error.response.data.error.message);
-            else console.log(error.message);
+      
+            if (error.response) setError({isError:true, message:error.response.data.error.message})
+            else  setError({isError:true, message:error.message});
         }
        
     };
